@@ -1,0 +1,1 @@
+document.getElementById('ninedev').setAttribute('style', 'color: red');
