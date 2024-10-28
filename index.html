@@ -66,19 +66,16 @@
           <div class="group-select-category">
             <div class="select-category-item">
               <div class="category-title gray">Type</div>
-              <select name="category-card" class="category-card">
-                <option value="used-card">Used Card</option>
-                <option value="sell-card">Sell Card</option>
-                <option value="buy-card">Buy Card</option>
+              <select name="category-card" class="category-card" id="category-card">
               </select>
             </div>
             <div class="line-vertical"></div>
             <div class="select-category-item">
               <div class="category-title gray">Model</div>
               <select name="model-card" class="category-card">
-                <option value="used-model">Used Model</option>
-                <option value="sell-model">Sell Model</option>
-                <option value="buy-model">Buy Model</option>
+                <option value="classic-model">Classic Model</option>
+                <option value="style-model">Style Model</option>
+                <option value="fashion-model">Fashion Model</option>
               </select>
             </div>
             <div class="line-vertical"></div>
@@ -137,36 +134,10 @@
       </div>
       <div class="wrapper-trending">
         <h1 class="text-trending">Trending near you</h1>
-        <div class="group-trending">
-          <div class="box-trending">
-            <div class="logo-trending">
-              <img src="/img/bmw-1.jpg" width="100%" height="auto" alt="BMW1" />
-            </div>
-            <div class="trending-main">BMW Version 1</div>
-            <div class="trending-sub gray">250.000 Vehical</div>
-          </div>
-          <div class="box-trending">
-            <div class="logo-trending">
-              <img src="/img/bmw-2.jpg" width="100%" height="auto" alt="BMW1" />
-            </div>
-            <div class="trending-main">BMW Version 2</div>
-            <div class="trending-sub gray">270.000 Vehical</div>
-          </div>
-          <div class="box-trending">
-            <div class="logo-trending">
-              <img src="/img/bmw-3.jpg" width="100%" height="auto" alt="BMW1" />
-            </div>
-            <div class="trending-main">BMW Version 3</div>
-            <div class="trending-sub gray">290.000 Vehical</div>
-          </div>
-          <div class="box-trending">
-            <div class="logo-trending">
-              <img src="/img/bmw-4.jpg" width="100%" height="auto" alt="BMW1" />
-            </div>
-            <div class="trending-main">BMW Version 4</div>
-            <div class="trending-sub gray">300.000 Vehical</div>
-          </div>
+        <div class="control-input-search">
+          <input id="search-trending" type="text" placeholder="Enter Search!" />
         </div>
+        <div class="group-trending" id="group-trending"></div>
       </div>
       <div class="wrapper-finding">
         <div class="group-finding-nav">
@@ -190,7 +161,7 @@
             </div>
           </div>
         </div>
-        <div class="group-finding">
+        <div class="group-finding" id="group-finding">
           <div class="box-finding">
             <div class="logo-finding">
               <img
@@ -293,5 +264,7 @@
         <div>English</div>
       </div>
     </div>
+
+    <script src="./javascript.js"></script>
   </body>
 </html>
